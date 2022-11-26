@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--typo);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body li:hover {
+  transform: scale(1.3);
+  border-radius: 5px;
+  background-color: rgba(215, 191, 223, 0.4);
+}
+
+header {
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo_asso {
+  width: 100px;
+  height: 100px;
+}
+
+header nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  transition: transform ease-in-out 0.2s;
+  padding: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--couleur-typo);
+  font-size: 1.5em;
+}
+
+.lien_accueil {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.btn_profil {
+  display: flex;
+}
+
+header button {
+  font-family: var(--typo);
+  color: #fff;
+  background-color: var(--couleur-principale-fonce);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
+.img_workspace {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* ceci est le css pour nos tutos  */
+#back {
+  background-color: #d7bfdf;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nos {
+  color: #23680c;
+  background-color: #e9dcea;
+  border: solid 2px #ae9db4;
+  padding: 28px;
+  text-align: center;
+  font-size: 55px;
+  width: 746px;
+  border-radius: 15px;
+}
+
+#mesure {
+  background-color: #a67aa9;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#principal {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image_toto {
+  height: 425px;
+  width: 425px;
+  padding-top: 60px;
+  margin-right: 100px;
+}
+
+/* prend en compte les image */
+#tricot_text {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+#couture_text {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+#crochet_text {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+#costume_text {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+#accessoires_text {
+  height: 480px;
+  width: 480px;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+
+.bout {
+  border-radius: 35px;
+  background-color: #e9dcea;
+  margin-bottom: -20px;
+  display: flex;
+  align-items: center;
+  height: 76px;
+  justify-content: center;
+  width: 501px;
+  margin-left: -70px;
+  color: #23680c;
+  font-size: 30px;
+}
+
+.textes {
+  height: 251px;
+  width: 502px;
+  background-color: #e9dcea;
+  border-radius: 21px;
+  text-align: center;
+  margin-top: 58px;
+  align-items: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  color: #23680c;
+}
+
+/* ceci est le footer */
+
+.foot {
+  max-width: 1440px;
+  height: 680px;
+  border: solid black 2px;
+  padding-bottom: 30px;
+}
+
+.photo_fond {
+  background-image: url(../images/banniere_footer.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+}
+
+.container {
+  margin-top: 30px;
+  height: 250px;
+}
+
+.reseaux {
+  display: flex;
+  width: 100%;
+}
+
+.details_reseaux {
+  display: flex;
+  justify-content: space-around;
+  width: 815px;
+  height: 257px;
+}
+
+.liens_reseaux {
+  padding: 20px;
+  height: 250px;
+}
+
+.logo_gmail {
+  margin-top: 20px;
+}
+
+.parents {
+  padding: 20px;
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.suivre {
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.line_vert {
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 200px;
+  margin: 0 20px;
+}
+
+.line_hor {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  width: 1133px;
+  margin: 0 100px;
+}
+
+.contact_ {
+  width: 200px;
+}
+
+.droits {
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.parents_droit {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.image {
+  width: 50%;
+}
+
+.bidul {
+  color: #000;
+}
+
+#haut {
+  scroll-behavior: smooth;
+}
+
+
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+}
+
+input, label {
+  display: none;
+}
+
+/* Début du Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+  header nav, header .btn_profil button {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 768px) {
+
+  /* début nav bar */
+
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul, header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%; 
+  }
+
+  header svg, header label {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+
+  /* fin nav bar */
+
+ 
+
+  /*debut respensive de NOS tutos*/
+
+  #mesure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_toto {
+    margin: 0;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    padding-top: 1;
+    padding-bottom: 135px;
+  }
+
+  #costume_text{
+    height: 506px;
+    width: 693px;
+    display: flex;
+    padding-top: 27px;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #accessoires_text{
+    height: 506px;
+    width: 693px;
+    display: flex;
+    padding-top: 27px;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+
+  #crochet_text{
+    height: 506px;
+    width: 693px;
+    display: flex;
+    padding-top: 27px;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #tricot_text{
+    height: 506px;
+    width: 693px;
+    display: flex;
+    padding-top: 27px;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #couture_text{
+    height: 506px;
+    width: 693px;
+    display: flex;
+    padding-top: 27px;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .flecheT{
+    left: 50px;
+  }
+
+  .bout{
+    border-radius: 35px;
+    background-color: #e9dcea;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    justify-content: center;
+    width: 289px;
+    margin-left: -70px;
+    color: #23680c;
+    font-size: 30px;
+  }
+
+  .textes{
+    height: 180px;
+    width: 707px;
+    background-color: #e9dcea;
+    border-radius: 21px;
+    text-align: center;
+    margin-top: 58px;
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    color: #23680c;
+  }
+
+  #mesure {
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: #D7BFDF;
+  }
+
+  /* Début responsive Footer */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: -20px;
+  }
+
+  /* Fin responsive Footer */
+
+}

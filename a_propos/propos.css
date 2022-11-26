@@ -1,0 +1,816 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --couleur-principale: #d7bfdf;
+  --couleur-principale-clair: #e9dcea;
+  --couleur-principale-fonce: #a67aa9;
+  --couleur-typo: #23680c;
+  --halloween-p: #ff9a00;
+  --halloween-s: #881ee4;
+  --noel: #b3000c;
+  --typo: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--typo);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* début HEADER */
+
+header {
+  background-color: var(--couleur-principale-clair);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo_asso {
+  width: 100px;
+  height: 100px;
+}
+
+header nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  text-decoration: none;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 10px;
+}
+body li {
+  transition: transform ease-in-out 0.2s;
+}
+body li:hover {
+  transform: scale(1.3);
+  border-radius: 5px;
+  transition: transform ease-in-out 0.2s;
+  cursor: pointer;
+  background-color: rgba(215, 191, 223, 0.4);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--couleur-typo);
+  font-size: 1.5em;
+}
+
+.lien_accueil {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.bouton a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn_profil {
+  display: flex;
+}
+
+header button {
+  font-family: var(--typo);
+  color: #fff;
+  background-color: var(--couleur-principale-fonce);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
+.img_workspace {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* début code */
+
+.titre_page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--couleur-principale);
+}
+
+.contien_titre_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: var(--couleur-typo);
+  font-size: 3.4em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 537px;
+  min-height: 97px;
+  background-color: var(--couleur-principale-clair);
+  border-radius: 15px;
+  box-shadow: 5px 4px 2px grey;
+}
+.photo_fond_main {
+  width: 100%;
+  height: auto;
+  background-image: url(images/fond_page_a_propos.png);
+}
+
+.membres_fondateurs {
+  width: 100%;
+  height: 472px;
+  text-align: center;
+}
+
+.membres_fondateurs_titre {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8em;
+}
+
+.membres_fondateurs_presentation {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(472px - 80px);
+  background-image: url(images/fond_page_a_propos.png);
+}
+
+.membres_fondateurs_presentation::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  clip-path: polygon(0 88%, 100% 6%, 100% 100%, 0 100%);
+  background-color: var(--couleur-principale);
+}
+
+h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.membres_fondateurs_presentation img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.txt_sophie,
+.txt_john {
+  z-index: 1;
+  font-size: 2em;
+  width: 350px;
+}
+
+.txt_sophie h3,
+.txt_john h3 {
+  margin-bottom: 32px;
+}
+
+.conteneur_pres {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fonda_presentations_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #b4aeae;
+  opacity: 80%;
+  margin: 50px 0 50px 150px;
+}
+
+.sophie_present {
+  padding-right: 20px;
+  word-spacing: 5px;
+  color: white;
+  padding-right: 20px;
+  position: relative;
+}
+.sophie_present::before {
+  content: "";
+  height: 150px;
+  border-right: solid black 1px;
+  width: 30px;
+  right: 0;
+  position: absolute;
+}
+.john_present {
+  padding-left: 20px;
+  margin: 20px 20px 20px 2px;
+  word-spacing: 5px;
+  color: white;
+  position: relative;
+}
+
+.john_present::before {
+  content: "";
+  height: 150px;
+  border-left: solid black 1px;
+  width: 30px;
+  left: 0;
+  bottom: 20;
+  position: absolute;
+  margin-top: 8px;
+}
+
+.fonda_presentations_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #b4aeae;
+  opacity: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.display_john {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.display_sophie {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.contient_liste {
+  display: flex;
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.liste_direct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  color: white;
+  background-color: #b4aeae;
+  opacity: 80%;
+}
+
+.liste_direct ul li {
+  margin: 3px;
+}
+.titre_adherents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 0.8em;
+  color: var(--couleur-typo);
+  height: 30px;
+  margin: 0 auto;
+  width: 180px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.tout_ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+/* formulaire */
+.incone_form {
+  display: flex;
+  justify-content: center;
+  background-color: var(--couleur-principale-clair);
+  box-shadow: 5px 4px 2px grey;
+  border-radius: 15px;
+  width: 15%;
+}
+
+.parent_icon {
+  padding-top: 50px;
+  width: 100%;
+  background-color: var(--couleur-principale);
+}
+.formulaire {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--couleur-principale);
+}
+
+form {
+  width: 100%;
+  height: 900px;
+  background-color: var(--couleur-principale-fonce);
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  margin-top: 135px;
+  margin-bottom: 100px;
+}
+
+.taille_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 90px;
+  background-color: var(--couleur-principale-clair);
+  color: var(--couleur-typo);
+  font-family: var(--couleur-typo);
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+.form_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  border-color: transparent;
+  background-color: var(--couleur-principale-clair);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"] {
+  width: 60%;
+  height: 90px;
+}
+
+input[type="text"] {
+  color: grey;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--typo);
+}
+
+#date {
+  height: 350px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../../images/calendrier.png);
+  width: 80px;
+  height: 60px;
+  margin-right: 200px;
+}
+
+.form_top_box {
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 2em;
+  font-family: var(--typo);
+  text-transform: uppercase;
+}
+
+.bouton_box {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+#bouton_envoie {
+  width: 320px;
+  height: 90px;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--typo);
+  color: var(--couleur-typo);
+  transition: 0.5s;
+}
+#bouton_envoie:hover {
+  box-shadow: 0 5px 50px white inset, 0 5px 50px 0 white;
+}
+
+/* footer */
+.foot {
+  max-width: 1440px;
+  padding-bottom: 30px;
+}
+.photo_fond {
+  background-image: url(../images/banniere_footer.png);
+  background-repeat: no-repeat;
+  min-height: 291px;
+  width: 100%;
+}
+
+.container {
+  margin-top: 30px;
+  height: 250px;
+}
+
+.reseaux {
+  padding: 20px;
+
+  display: flex;
+  width: 100%;
+}
+
+.details_reseaux {
+  display: flex;
+  justify-content: space-around;
+  width: 815px;
+  height: 257px;
+}
+
+.liens_reseaux {
+  height: 250px;
+  width: 100%;
+}
+
+.logo_gmail {
+  margin-top: 20px;
+}
+
+.parents {
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.suivre {
+  margin-left: 90px;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  color: #23680c;
+}
+
+.line_vert {
+  border-left: 2px solid #000;
+  display: inline-block;
+  height: 200px;
+  margin: 0 20px;
+}
+
+.line_hor {
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  width: 90%;
+  margin: 0 100px;
+}
+
+.contact_ {
+  width: 200px;
+}
+
+.droits {
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.bouton {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.parents_droit {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.image {
+  width: 50%;
+}
+
+@media screen and (min-width: 220px) and (max-width: 880px) {
+  .membres_fondateurs_presentation {
+    background-color: var(--couleur-principale-fonce);
+    background-image: none;
+    flex-direction: column;
+    font-size: 0.6em;
+    height: auto;
+  }
+
+  .membres_fondateurs_presentation::before {
+    display: none;
+  }
+  .membres_fondateurs_presentation img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .fonda_presentations_txt {
+    color: black;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .sophie_present::before {
+    display: none;
+  }
+
+  .john_present::before {
+    display: none;
+  }
+
+  .liste_direct {
+    background-color: transparent;
+    display: flex;
+    margin-block: 20px;
+  }
+
+  .contien_titre_page {
+    width: 50%;
+    border-radius: 20px;
+    font-size: x-large;
+  }
+
+  .titre_adherents {
+    margin-top: 60px;
+  }
+
+  .titre_page {
+    background-image: none;
+    background-color: var(--couleur-principale-fonce);
+  }
+  .photo_fond_main {
+    background-image: none;
+    background-color: var(--couleur-principale-fonce);
+  }
+}
+
+svg {
+  display: none;
+  color: #000;
+  width: 24px;
+  height: 28px;
+}
+
+.hidden,
+#hidden {
+  display: none;
+}
+
+/* Début du Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+  header nav,
+  header .btn_profil button {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 880px) {
+  /* début nav bar */
+  .photo_fond {
+    display: none;
+    height: auto;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header nav ul,
+  header .btn_profil button {
+    display: none;
+  }
+
+  header nav ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: var(--couleur-principale-fonce);
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: 22px;
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-weight: normal;
+  }
+
+  header nav ul li a.lien_accueil {
+    font-weight: normal;
+  }
+
+  header nav ul li {
+    padding: 8px 0;
+  }
+
+  header nav ul li:hover {
+    transform: none;
+    transition: none;
+  }
+
+  header nav {
+    width: auto;
+  }
+
+  header .logo_asso {
+    border-radius: 50%;
+  }
+
+  .hidden,
+  svg {
+    display: block;
+  }
+
+  input:checked ~ ul {
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    height: 225px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 880px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
+  .txt_john {
+    position: absolute;
+    top: 103%;
+    text-align: center;
+    font-size: 1.8em;
+    width: 100%;
+  }
+  .txt_sophie {
+    text-align: center;
+    font-size: 1.8em;
+    width: 100%;
+  }
+  .parent_icon {
+    background-color: transparent;
+  }
+
+  .retour a {
+    margin-left: 25px;
+  }
+
+  .formulaire {
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+
+  .formulaire form {
+    margin-left: 10px;
+    margin-top: 0;
+    background-color: transparent;
+  }
+
+  .formulaire form .form_top_box .form_flex {
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  .formulaire form,
+  .form_top_box {
+    width: auto;
+    height: auto;
+  }
+
+  .formulaire form .form_flex label {
+    margin-bottom: 5px;
+    width: 150px;
+    font-size: 1em;
+    height: 60px;
+    background-color: var(--couleur-principale);
+  }
+
+  .formulaire form .form_flex input {
+    width: 300px;
+    font-size: 1em;
+    background-color: var(--couleur-principale);
+  }
+
+  .halloween {
+    height: auto;
+  }
+
+  .halloween .texte {
+    font-size: 0.5em;
+    height: auto;
+  }
+
+  .halloween .texte p {
+    margin: 20px 0;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 10px;
+  }
+
+  .formulaire form .bouton_box .bouton {
+    margin-top: 40px;
+  }
+
+  .formulaire form .bouton_box .bouton #bouton_envoie {
+    font-size: 1em;
+    width: 185px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 1040px) {
+  /* footer responsive */
+
+  /* footer début */
+
+  .details_reseaux {
+    width: auto;
+  }
+
+  .line_vert {
+    display: none;
+  }
+
+  .reseaux {
+    flex-direction: column;
+  }
+
+  .parents {
+    margin-top: -107px;
+    margin-left: 80px;
+  }
+
+  .line_hor {
+    display: none;
+  }
+
+  .droits {
+    margin-top: 30px;
+  }
+
+  /* Fin responsive Footer */
+}
