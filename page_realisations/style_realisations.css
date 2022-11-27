@@ -575,4 +575,15 @@ svg {
     height: 225px;
     display: block;
   }
+
+/* container */
+
+  .container_categories{
+    justify-content: center;
+  }
+
+  .cate img {
+    width: 300px;
+    height: 300px;
+  }
 }

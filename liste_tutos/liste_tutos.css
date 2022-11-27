@@ -592,13 +592,20 @@ label {
   }
  
   /* debut footer  */
-
   .details_reseaux {
     width: auto;
   }
 
   .line_vert {
     display: none;
+  }
+
+  .photo_fond {
+    display: none;
+  }
+
+  .foot {
+    height: auto;
   }
 
   .reseaux {
@@ -618,5 +625,5 @@ label {
   }
 
   /* Fin responsive Footer */
-
+  
 }

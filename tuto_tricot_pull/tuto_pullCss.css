@@ -52,9 +52,9 @@ header {
 header nav {
     width: 70%;
     height: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 header nav ul {
@@ -175,12 +175,12 @@ header button {
 }
 
 
-.box_img{
+.box_img {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin: 0 15px ;
-  }
+    margin: 0 15px;
+}
 
 .toto {
     background-color: #A67AA9;
@@ -230,7 +230,7 @@ header button {
 
 /* ici les fleche et img_acce*/
 
-#result{
+#result {
     font-size: 25px;
     background-color: #A67AA9;
     height: 104px;
@@ -283,13 +283,13 @@ header button {
     align-items: center;
     background-color: #A67AA9;
     height: 80px;
-    width: 200px;
+    width: 100%;
     color: white;
 }
 
 #corps_l {
     height: 318px;
-    width: 200px;
+    width: 100%;
     background-color: #D7BFDF;
     padding: 30px;
     color: #23680c;
@@ -312,17 +312,18 @@ header button {
 
 .etape2 {
     height: 84px;
-    width: 127px;
+    width: 30%;
     background-color: #A67AA9;
     display: flex;
     margin-left: 45px;
-    padding: 43px;
+    /* padding: 43px; */
     justify-content: space-evenly;
-    flex-direction: column;
-    align-content: center;
-    font-size: 63%;
+    /* flex-direction: column; */
+    /* align-content: center; */
+    font-size: 110%;
     align-items: center;
 }
+
 
 /*ceci et la parti resulta des membre*/
 #boite_accessoire22 {
@@ -450,92 +451,97 @@ header button {
     scroll-behavior: smooth;
 }
 
-  
-  svg {
+
+svg {
     display: none;
     color: #000;
     width: 24px;
     height: 28px;
-  }
-  
-  input, label {
+}
+
+input,
+label {
     display: none;
-  }
-  
-  /* Début du Responsive */
-  
-  @media screen and (min-width: 769px) and (max-width: 1085px) {
-    header nav, header .btn_profil button {
-      font-size: 0.6em;
+}
+
+/* Début du Responsive */
+
+@media screen and (min-width: 769px) and (max-width: 1085px) {
+
+    header nav,
+    header .btn_profil button {
+        font-size: 0.6em;
     }
-  }
-  
-  @media screen  and (max-width: 768px) {
-  
+}
+
+@media screen and (max-width: 768px) {
+
     /* début nav bar */
-  
+
     header {
-      justify-content: space-between;
-      padding: 0 20px;
-      position: relative;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: relative;
     }
-  
-    header nav ul, header .btn_profil button {
-      display: none;
+
+    header nav ul,
+    header .btn_profil button {
+        display: none;
     }
-  
+
     header nav ul {
-      position: absolute;
-      left: 0;
-      top: 80px;
-      background-color: var(--couleur-principale-fonce);
-      width: 200px;
-      height: 0;
-      overflow: hidden;
-      align-items: center;
-      transition: all 0.3s ease-in-out;
-      display: block;
-      margin-left: 22px;
-      z-index: 10;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        background-color: var(--couleur-principale-fonce);
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        display: block;
+        margin-left: 22px;
+        z-index: 10;
     }
-  
+
     header nav ul li a {
-      color: white;
-      font-weight: normal;
+        color: white;
+        font-weight: normal;
     }
-  
+
     header nav ul li a.lien_accueil {
-      font-weight: normal;
+        font-weight: normal;
     }
-  
+
     header nav ul li {
-      padding: 8px 0;
+        padding: 8px 0;
     }
-  
+
     header nav ul li:hover {
-      transform: none;
-      transition: none;
+        transform: none;
+        transition: none;
     }
-  
+
     header nav {
-      width: auto;
+        width: auto;
     }
-  
+
     header .logo_asso {
-      border-radius: 50%; 
+        border-radius: 50%;
     }
-  
-    header svg, header label {
-      display: block;
+
+    header svg,
+    header label {
+        display: block;
     }
-  
-    input:checked ~ ul {
-      flex-direction: column;
-      transition: all 0.3s ease-in;
-      height: 225px;
-      display: block;
+
+    input:checked~ul {
+        flex-direction: column;
+        transition: all 0.3s ease-in;
+        height: 225px;
+        display: block;
     }
-  
+
     /* fin nav bar */
 
 
@@ -548,26 +554,17 @@ header button {
     }
 
     #mastok_1 {
-    /* padding: 5%; */
-    font-size: 35px;
-    display: block;
-    /* width: 1000px; */
-    height: 796px;
-    /* background-color: #b3000c; */
-    margin-top: 75px;
+        /* padding: 5%; */
+        font-size: 35px;
+        display: block;
+        /* width: 1000px; */
+        height: 796px;
+        /* background-color: #b3000c; */
+        margin-top: 75px;
     }
 
-    #liste_t {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #A67AA9;
-        height: 80px;
-        /* width: 200px; */
-        color: white;
-    }
 
-    #mastok_2{
+    #mastok_2 {
         margin-top: 416px;
         padding: 5%;
         font-size: 35px;
@@ -589,7 +586,7 @@ header button {
     #etape {
         display: flex;
         height: 76px;
-        width: 622px;
+        width: auto;
         margin-top: 40px;
         justify-content: space-evenly;
         padding-left: 30px;
@@ -597,22 +594,28 @@ header button {
     }
 
 
-    .etape2 {
-        height: 131px;
-        width: 230px;
+    .toto {
         background-color: #A67AA9;
+        height: 60px;
+        width: 60%;
         display: flex;
         justify-content: center;
-        align-content: space-between;
         align-items: center;
-        margin: 32px;
+        top: -55px;
+        border-radius: 23px;
+        color: aliceblue;
+        position: absolute;
+        right: -25px;
     }
+
+
+
 
     #boite_accessoire {
         /* flex-direction: column; */
         padding: 25px;
     }
-    
+
 
     #coteA {
         display: flex;
@@ -621,8 +624,8 @@ header button {
     }
 
     .img_acce2 {
-        width: 100%;
-        /* height: auto; */
+        width: 120%;
+        /* height: 84%; */
         margin-top: -32px;
     }
 
@@ -638,7 +641,7 @@ header button {
         display: flex;
         flex-direction: column;
         font-size: 35px;
-    
+
     }
 
     #liste_t {
@@ -652,10 +655,11 @@ header button {
 
     #corps_l {
         height: 318px;
+        width: 100%;
         background-color: #D7BFDF;
-        padding: 30px;
+        /* padding: 30px; */
         color: #23680c;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -670,48 +674,47 @@ header button {
         padding-left: 30px;
     }
 
+    .etape2 {
+        height: 84px;
+        margin: 2%;
+        font-size: 30%;
+    }
+
+
     /* debut footer  */
 
-  .details_reseaux {
-    width: auto;
-  }
-
-  .line_vert {
-    display: none;
-  }
-
-  .reseaux {
-    flex-direction: column;
-  }
-
-  .parents {
-    margin-top: -107px;
-  }
-
-  .line_hor {
-    display: none;
-  }
-
-  .droits {
-    margin-top: -20px;
-  }
-
-  .photo_fond {
-    background-image: url(../images/banniere_footer.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 40%;
-    display: none;
-}
-
-.foot {
-    max-width: 1440px;
-    height: auto;
-    border: solid black 2px;
-    padding-bottom: 30px;
-}
-
-  /* Fin responsive Footer */
-
-}
-
+    .details_reseaux {
+        width: auto;
+      }
+    
+      .line_vert {
+        display: none;
+      }
+    
+      .photo_fond {
+        display: none;
+      }
+    
+      .foot {
+        height: auto;
+      }
+    
+      .reseaux {
+        flex-direction: column;
+      }
+    
+      .parents {
+        margin-top: -107px;
+      }
+    
+      .line_hor {
+        display: none;
+      }
+    
+      .droits {
+        margin-top: -20px;
+      }
+    
+      /* Fin responsive Footer */
+      
+    }
