@@ -107,7 +107,6 @@ header button {
   padding: 5%;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .nos {
@@ -127,7 +126,11 @@ header button {
   padding-bottom: 30px;
 }
 
-#principal {
+.ajust{
+  display: none;
+}
+
+.principal {
   display: flex;
   justify-content: space-evenly;
 }
@@ -203,7 +206,6 @@ header button {
   align-items: center;
   height: 76px;
   justify-content: center;
-  width: 501px;
   margin-left: -70px;
   color: #23680c;
   font-size: 30px;
@@ -211,7 +213,6 @@ header button {
 
 .textes {
   height: 251px;
-  width: 502px;
   background-color: #e9dcea;
   border-radius: 21px;
   text-align: center;
@@ -351,15 +352,19 @@ input, label {
 
 /* Début du Responsive */
 
-@media screen and (min-width: 769px) and (max-width: 1085px) {
+@media screen and (max-width: 1085px) {
   header nav, header .btn_profil button {
     font-size: 0.6em;
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* début nav bar */
+
+  main{
+    box-sizing: border-box;
+  }
 
   header {
     justify-content: space-between;
@@ -432,159 +437,111 @@ input, label {
   #mesure {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: #D7BFDF;
   }
 
-  #principal {
+  
+
+  .principal {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
+
+
+
 
   .image_toto {
     margin: 0;
     width: 200px;
     height: auto;
     position: absolute;
-    padding-top: 1;
-    padding-bottom: 135px;
+    padding: 45px;
+    margin-top: 64px;
   }
 
   #costume_text{
-    height: 506px;
-    width: 693px;
-    display: flex;
-    padding-top: 27px;
-    flex-direction: column;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    justify-content: space-between;
-    align-items: center;
-
+    width: auto;
+    padding: 44px;
+    padding-top: 0px;
   }
 
   #accessoires_text{
-    height: 506px;
-    width: 693px;
-    display: flex;
-    padding-top: 27px;
-    flex-direction: column;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    justify-content: space-between;
-    align-items: center;
-
-
+    width: auto;
+    padding: 44px;
+    padding-top: 0px;
   }
 
   #crochet_text{
-    height: 506px;
-    width: 693px;
-    display: flex;
-    padding-top: 27px;
-    flex-direction: column;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    justify-content: space-between;
-    align-items: center;
-
+    width: auto;
+    padding: 44px;
+    padding-top: 0px;
   }
 
   #tricot_text{
-    height: 506px;
-    width: 693px;
-    display: flex;
-    padding-top: 27px;
-    flex-direction: column;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    justify-content: space-between;
-    align-items: center;
-
+    width: auto;
+    padding: 44px;
+    padding-top: 0px;
   }
 
   #couture_text{
-    height: 506px;
-    width: 693px;
-    display: flex;
-    padding-top: 27px;
-    flex-direction: column;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    justify-content: space-between;
-    align-items: center;
-
+    width: auto;
+    padding: 44px;
+    padding-top: 0px;
   }
+
 
   .flecheT{
     left: 50px;
   }
 
   .bout{
-    border-radius: 35px;
-    background-color: #e9dcea;
-    margin-bottom: -20px;
-    display: flex;
-    align-items: center;
-    height: 76px;
-    justify-content: center;
     width: 289px;
-    margin-left: -70px;
-    color: #23680c;
-    font-size: 30px;
+    margin: auto;
+    margin-bottom: 110px;
   }
 
   .textes{
     height: 180px;
-    width: 707px;
-    background-color: #e9dcea;
-    border-radius: 21px;
-    text-align: center;
-    margin-top: 58px;
-    align-items: center;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: -70px;
-    color: #23680c;
-  }
+    margin: auto;
+}
 
-  #mesure {
-    width: 100%;
-    padding-bottom: 30px;
-    background-color: #D7BFDF;
-  }
+  
+.details_reseaux {
+  width: auto;
+}
 
-  /* Début responsive Footer */
+.line_vert {
+  display: none;
+}
 
-  .details_reseaux {
-    width: auto;
-  }
+.photo_fond {
+  display: none;
+}
 
-  .line_vert {
-    display: none;
-  }
+.foot {
+  height: auto;
+}
 
-  .reseaux {
-    flex-direction: column;
-  }
+.reseaux {
+  flex-direction: column;
+}
 
-  .parents {
-    margin-top: -107px;
-  }
+.parents {
+  margin-top: -107px;
+}
 
-  .line_hor {
-    display: none;
-  }
+.line_hor {
+  display: none;
+}
 
-  .droits {
-    margin-top: -20px;
-  }
+.droits {
+  margin-top: -20px;
+}
 
-  /* Fin responsive Footer */
+/* Fin responsive Footer */
 
 }

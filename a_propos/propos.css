@@ -539,7 +539,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 50%;
 }
 
-@media screen and (min-width: 220px) and (max-width: 880px) {
+@media screen and (max-width: 880px) {
   .membres_fondateurs_presentation {
     background-color: var(--couleur-principale-fonce);
     background-image: none;
@@ -583,6 +583,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 50%;
     border-radius: 20px;
     font-size: x-large;
+    box-shadow: 5px 4px 2px dimgrey;
   }
 
   .titre_adherents {
@@ -620,7 +621,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 880px) {
+@media screen and (max-width: 880px) {
   /* début nav bar */
   .photo_fond {
     display: none;
@@ -691,7 +692,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 880px) {
+@media screen and (max-width: 880px) {
   main {
     width: auto;
     height: auto;
@@ -782,7 +783,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 220px) and (max-width: 1040px) {
+@media screen and (max-width: 1040px) {
   /* footer responsive */
 
   /* footer début */

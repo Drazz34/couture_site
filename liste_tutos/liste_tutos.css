@@ -191,6 +191,8 @@ header button {
   margin-right: 15px;
 }
 
+
+
 .toto {
   background-color: #A67AA9;
   height: 60px;
@@ -220,7 +222,7 @@ right: -25px;
   position: relative;
 }
 
-#acce {
+.acce {
   width: 100%;
   height: 200px;
   display: flex;
@@ -228,7 +230,7 @@ right: -25px;
   align-items: center;
 }
 
-#accessoire1 {
+.accessoire1 {
   background-color: #A67AA9;
   color: white;
   width: 183px;
@@ -239,7 +241,7 @@ right: -25px;
   justify-content: center;
 }
 
-#boite_accessoire {
+.boite_accessoire {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
@@ -481,7 +483,7 @@ label {
   /* debut du corps du site */
 
 
-  #acce {
+  .acce {
     width: 100%;
     height: 200px;
     display: flex;
@@ -494,7 +496,7 @@ label {
 
 
 
-  #boite_accessoire {
+  .boite_accessoire {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
@@ -592,13 +594,20 @@ label {
   }
  
   /* debut footer  */
-
   .details_reseaux {
     width: auto;
   }
 
   .line_vert {
     display: none;
+  }
+
+  .photo_fond {
+    display: none;
+  }
+
+  .foot {
+    height: auto;
   }
 
   .reseaux {
@@ -618,5 +627,5 @@ label {
   }
 
   /* Fin responsive Footer */
-
+  
 }
